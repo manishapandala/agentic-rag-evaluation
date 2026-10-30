@@ -1,0 +1,88 @@
+{
+  "scope": "deterministic generated-corpus agent evaluation",
+  "documents": 80,
+  "evaluation_queries": 8,
+  "top_1_topic_accuracy": 1.0,
+  "median_run_ms": 0.1721,
+  "p95_run_ms": 0.189,
+  "results": [
+    {
+      "query": "How do I evaluate grounded RAG answers and citations?",
+      "expected_topic": "rag",
+      "top_topic": "rag",
+      "evidence_coverage": 0.8,
+      "citations": [
+        "DOC-000",
+        "DOC-001"
+      ]
+    },
+    {
+      "query": "What should an agent trace record for tool calls?",
+      "expected_topic": "agents",
+      "top_topic": "agents",
+      "evidence_coverage": 1.0,
+      "citations": [
+        "DOC-001",
+        "DOC-002"
+      ]
+    },
+    {
+      "query": "How can a data agent safely calculate business metrics?",
+      "expected_topic": "analytics",
+      "top_topic": "analytics",
+      "evidence_coverage": 0.667,
+      "citations": [
+        "DOC-002",
+        "DOC-001"
+      ]
+    },
+    {
+      "query": "How does zero trust reduce supplier access risk?",
+      "expected_topic": "security",
+      "top_topic": "security",
+      "evidence_coverage": 0.667,
+      "citations": [
+        "DOC-003"
+      ]
+    },
+    {
+      "query": "How should sales demand forecasts be backtested?",
+      "expected_topic": "forecasting",
+      "top_topic": "forecasting",
+      "evidence_coverage": 0.75,
+      "citations": [
+        "DOC-004"
+      ]
+    },
+    {
+      "query": "What makes a machine learning model reliable after deployment?",
+      "expected_topic": "reliability",
+      "top_topic": "reliability",
+      "evidence_coverage": 0.8,
+      "citations": [
+        "DOC-005",
+        "DOC-000"
+      ]
+    },
+    {
+      "query": "Why preserve image geometry during anomaly inspection?",
+      "expected_topic": "vision",
+      "top_topic": "vision",
+      "evidence_coverage": 0.8,
+      "citations": [
+        "DOC-006",
+        "DOC-002"
+      ]
+    },
+    {
+      "query": "How can AI applications connect to typed tools and resources?",
+      "expected_topic": "mcp",
+      "top_topic": "mcp",
+      "evidence_coverage": 0.833,
+      "citations": [
+        "DOC-007",
+        "DOC-002"
+      ]
+    }
+  ]
+}

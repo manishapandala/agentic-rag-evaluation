@@ -1,0 +1,60 @@
+{
+  "query": "How should an agent evaluate grounded answers and record tool traces?",
+  "answer": "Agent workflows record plans, tool calls, retries, guardrail decisions, and final citations in an inspectable trace. Grounded answers cite retrieved evidence. [DOC-001] [DOC-000]",
+  "citations": [
+    "DOC-001",
+    "DOC-000"
+  ],
+  "evidence_coverage": 1.0,
+  "retrieved": [
+    {
+      "document_id": "DOC-001",
+      "topic": "agents",
+      "title": "Observable agent workflows 1",
+      "score": 7.0098,
+      "text": "Agent workflows record plans, tool calls, retries, guardrail decisions, and final citations in an inspectable trace. Evaluation note 1 keeps this generated corpus deterministic."
+    },
+    {
+      "document_id": "DOC-000",
+      "topic": "rag",
+      "title": "Grounded retrieval evaluation 1",
+      "score": 4.7077,
+      "text": "Grounded answers cite retrieved evidence. Retrieval evaluation measures hit rate, evidence coverage, and unsupported claims before deployment. Evaluation note 1 keeps this generated corpus deterministic."
+    },
+    {
+      "document_id": "DOC-002",
+      "topic": "analytics",
+      "title": "Guarded analytics tools 1",
+      "score": 2.7049,
+      "text": "A data analyst agent should validate the schema, allowlist tools, compute metrics, and preserve an audit trail for every result. Evaluation note 1 keeps this generated corpus deterministic."
+    }
+  ],
+  "trace": [
+    {
+      "step": "plan",
+      "detail": "retrieve, verify evidence, then synthesize"
+    },
+    {
+      "step": "retrieve",
+      "query": "How should an agent evaluate grounded answers and record tool traces?",
+      "document_ids": [
+        "DOC-001",
+        "DOC-000",
+        "DOC-002"
+      ]
+    },
+    {
+      "step": "verify",
+      "evidence_coverage": 1.0,
+      "threshold": 0.55
+    },
+    {
+      "step": "synthesize",
+      "citations": [
+        "DOC-001",
+        "DOC-000"
+      ],
+      "grounding_rule": "retrieved sentences only"
+    }
+  ]
+}
